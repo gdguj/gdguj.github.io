@@ -1,0 +1,25 @@
+:root {
+    --color-blueviolet-100: #8236fc;
+    --color-blueviolet-200: #8236fc66;
+    --color-blueviolet-300: #8236fc4d;
+    --color-gainsboro: #e6e6e6;
+    --color-gray-300: #ffffff0a;
+    --color-white: #fff;
+    --color-lavender-100: #f6f0ffc9;
+    --color-lavender-200: #e9dfff26;
+    --color-dimgray-100: #707070;
+    --color-dimgray-200: #575757;
+    --color-whitesmoke: #f4f4f4;
+    --color-darkgray: #959595;
+    --color-black: #000;
+    --color-background: #00002b;
+    --color-gray-100: #fefefe;
+    --color-antiquewhite: #ffe9d9;
+    --color-linen: #fff1e6;
+    --color-darkslateblue: #342d67;
+    --color-darkslategray: #373738;
+}
+
+.bg-custom {
+    background-color: var(--color-background);
+}
