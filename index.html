@@ -22,26 +22,47 @@
 
     <!-- ========== قسم الرأس ========== -->
     <!-- عضو الفريق: ابتهال -->
-    <header class="absolute top-0 left-0 w-full py-4 z-20">
-        <div class="container mx-auto flex justify-between items-center px-6 h-16
-            bg-black/80 backdrop-blur-sm rounded-3xl shadow-lg">
+    <header class="absolute top-0 left-0 w-full py-2 sm:py-4 z-20 px-4 sm:px-0">
+        <div class="container mx-auto px-6 sm:px-6 bg-black/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden">
+            
+            <!-- Header Top Row -->
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <img src="static/logo/logo-white.svg" alt="Logo" class="h-8 sm:h-10">
+                </div>
 
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-                <img src="static/logo/logo-white.svg" alt="Logo" class="h-10">
+                <!-- Hamburger Button (Mobile) -->
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center px-3 py-2 text-white focus:outline-none transition-transform duration-200" aria-label="فتح القائمة">
+                    <svg class="h-6 w-6 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex gap-4 lg:gap-6 text-white text-base lg:text-lg font-light">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">الموقع</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">الأجندة</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">التسجيل</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors">الأسئلة المتكررة</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <!-- Navigation -->
-            <nav>
-                <ul class="flex gap-6 text-white text-lg font-light">
-                    <li><a href="#" class="hover:text-purple-400">الرئيسية</a></li>
-                    <li><a href="#" class="hover:text-purple-400">الموقع</a></li>
-                    <li><a href="#" class="hover:text-purple-400">الأجندة</a></li>
-                    <li><a href="#" class="hover:text-purple-400">التسجيل</a></li>
-                    <li><a href="#" class="hover:text-purple-400">الأسئلة المتكررة</a></li>
-                </ul>
-            </nav>
-
+            <!-- Mobile Navigation Collapse (Bootstrap-style) -->
+            <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+                <nav class="border-t border-white/10 pt-4 pb-4">
+                    <ul class="flex flex-col text-white">
+                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a></li>
+                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a></li>
+                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a></li>
+                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a></li>
+                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة المتكررة</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -78,7 +99,7 @@
 
             <!-- Button -->
             <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white 
-                px-4 py-2 text-sm
+                px-8 py-3 text-base
                 md:px-6 md:py-2 md:text-base
                 lg:px-7 lg:py-3 lg:text-lg
                 rounded-lg font-medium shadow-lg transition">
@@ -292,48 +313,56 @@
             <div class="p-8 rounded-lg text-right text-white">
                 <h2 class="text-2xl font-semibold mb-6">الاسئلة المتكررة</h2>
                 <div class="space-y-4">
-                    <div class="bg-[#2E266F] p-2 rounded-lg text-right">
-                    <button class = "w-full flex justify-between items-center px-4 py-3 focus:outline-none">
-                        <span>اين سيتواجد الملتقى؟</span>
-                        <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="content hidden px-4 pb-3 text-sm text-gray-300">
-                            سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
-                    </div>  
-                    </div>
-                    <div class="bg-[#2E266F] p-2 rounded-lg text-right">
-                    <button class = "w-full flex justify-between items-center px-4 py-3 focus:outline-none">
-                        <span>اين سيتواجد الملتقى؟</span>
-                        <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>    
-                    <div class="content hidden px-4 pb-3 text-sm text-gray-300">
-                            سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
-                    </div>  
-                    </div>
-                    <div class="bg-[#2E266F] p-2 rounded-lg text-right">
-                        <button class = "w-full flex justify-between items-center px-4 py-3 focus:outline-none">
+                    <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
                             <span>اين سيتواجد الملتقى؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                    <div class="content hidden px-4 pb-3 text-sm text-gray-300">
-                            سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
-                    </div>    
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                            <div class="pb-3">
+                                سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
+                            </div>
+                        </div>  
                     </div>
-                    <div class="bg-[#2E266F] p-2 rounded-lg text-right">
-                        <button class = "w-full flex justify-between items-center px-4 py-3 focus:outline-none">
-                            <span>اين سيتواجد الملتقى؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
+                            <span>متى سيكون الملتقى؟</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>    
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                            <div class="pb-3">
+                                سيكون الملتقى يوم السبت الموافق 21 سبتمبر 2024 من الساعة 4:00 عصراً حتى 9:00 مساءً.
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
+                            <span>هل التسجيل مجاني؟</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="content hidden px-4 pb-3 text-sm text-gray-300">
-                            سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                            <div class="pb-3">
+                                نعم، التسجيل في الملتقى مجاني تماماً ولكن الأماكن محدودة لذلك ننصح بالتسجيل المبكر.
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
+                        <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
+                            <span>كيف يمكنني التسجيل؟</span>
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                            <div class="pb-3">
+                                يمكنك التسجيل من خلال الضغط على زر "التسجيل" في أعلى الصفحة أو من خلال الرابط المباشر في الموقع.
+                            </div>
                         </div>      
                     </div>
                 </div>
