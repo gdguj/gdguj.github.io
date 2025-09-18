@@ -74,3 +74,13 @@
 .bg-custom {
     background-color: var(--color-background);
 }
+
+.custom-gap-section {
+    gap: 0px;
+}
+
+@media (min-width: 768px) {
+    .custom-gap-section {
+        gap: 2rem; /* Equivalent to md:gap-8 (1 unit = 0.25rem, so 8 units = 2rem) */
+    }
+}
