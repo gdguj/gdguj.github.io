@@ -22,44 +22,44 @@
 
     <!-- ========== قسم الرأس ========== -->
     <!-- عضو الفريق: ابتهال -->
-    <header class="absolute top-0 left-0 w-full py-2 sm:py-4 z-20 px-4 sm:px-0">
-        <div class="container mx-auto px-6 sm:px-6 bg-black/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden">
+    <header class="absolute top-0 left-0 w-full py-2 sm:py-3 md:py-4 z-20 px-3 sm:px-4 md:px-0">
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 bg-black/80 backdrop-blur-sm rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
             
             <!-- Header Top Row -->
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between items-center h-14 sm:h-16 md:h-16">
                 <!-- Logo -->
                 <div class="flex items-center gap-2">
-                    <img src="static/logo/logo-white.svg" alt="Logo" class="h-8 sm:h-10">
+                    <img src="static/logo/logo-white.svg" alt="Logo" class="h-7 sm:h-8 md:h-9 lg:h-10">
                 </div>
 
                 <!-- Hamburger Button (Mobile) -->
-                <button id="mobile-menu-toggle" class="md:hidden flex items-center px-3 py-2 text-white focus:outline-none transition-transform duration-200" aria-label="فتح القائمة">
-                    <svg class="h-6 w-6 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center px-2 py-1 sm:px-3 sm:py-2 text-white focus:outline-none transition-transform duration-200" aria-label="فتح القائمة">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:block">
-                    <ul class="flex gap-4 lg:gap-6 text-white text-base lg:text-lg font-light">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">الرئيسية</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">الموقع</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">الأجندة</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">التسجيل</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors">الأسئلة المتكررة</a></li>
+                    <ul class="flex gap-3 md:gap-4 lg:gap-6 text-white text-sm md:text-base lg:text-lg font-light">
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الرئيسية</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الموقع</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأجندة</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">التسجيل</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة المتكررة</a></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- Mobile Navigation Collapse (Bootstrap-style) -->
             <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
-                <nav class="border-t border-white/10 pt-4 pb-4">
-                    <ul class="flex flex-col text-white">
-                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a></li>
-                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a></li>
-                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a></li>
-                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a></li>
-                        <li><a href="#" class="block py-3 px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة المتكررة</a></li>
+                <nav class="border-t border-white/10 pt-3 pb-3 sm:pt-4 sm:pb-4">
+                    <ul class="flex flex-col text-white text-sm sm:text-base">
+                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a></li>
+                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a></li>
+                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a></li>
+                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a></li>
+                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة المتكررة</a></li>
                     </ul>
                 </nav>
             </div>
@@ -72,37 +72,39 @@
         class="relative hero-bg bg-gradient-to-br from-purple-800 via-purple-900 to-black h-screen w-full flex items-center justify-center text-center overflow-hidden"
         style="background-image: url('static/background.png'); background-size: cover; background-position: center;">
 
-        <div class="relative z-10 max-w-2xl mx-auto">
-            <h1 class="text-5xl md:text-6xl lg:text-6xl font-semibold text-white mb-4">ملتقى كود الخبرة</h1>
-            <p class="text-sm md:text-lg lg:text-xl text-gray-200 font-medium mb-8">
+        <div class="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-6 md:px-8">
+            <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-4 sm:mb-4 md:mb-6 leading-tight">ملتقى كود الخبرة</h1>
+            <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl text-gray-200 font-medium mb-6 sm:mb-6 md:mb-8 leading-relaxed">
                 نسمع لقصص النخبة ونكتشف أكواد نجاحاتهم
             </p>
-            <p class="text-sm md:text-lg lg:text-xl text-gray-200 font-regular mb-8">
+            <p class="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl text-gray-200 font-regular mb-8 sm:mb-8 md:mb-10">
                 الوقت المتبقي لإغلاق التسجيل
             </p>
 
-            <!-- Countdown -->
-            <div id="countdown"
-                class="flex justify-center gap-5 text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-1">
+            <!-- Countdown Numbers -->
+            <div id="countdown-numbers"
+                class="flex justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-1 sm:mb-2">
                 <span id="minutes">00</span> :
                 <span id="hours">00</span> :
                 <span id="days">00</span>
             </div>
 
-            <div id="countdown"
-                class="flex justify-center gap-10 text-xs md:gap-10 md:text-sm lg:gap-20 lg:text-sm font-light text-white mb-10">
+            <!-- Countdown Labels -->
+            <div id="countdown-labels"
+                class="flex justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 xl:gap-20 text-xs sm:text-sm md:text-base font-light text-white mb-6 sm:mb-8 md:mb-10 lg:mb-12">
                 <span>دقائق</span>
                 <span>ساعات</span>
                 <span>أيام</span>
             </div>
 
-
             <!-- Button -->
-            <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white 
-                px-8 py-3 text-base
-                md:px-6 md:py-2 md:text-base
-                lg:px-7 lg:py-3 lg:text-lg
-                rounded-lg font-medium shadow-lg transition">
+            <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white 
+                px-6 py-2 text-sm
+                sm:px-7 sm:py-3 sm:text-base
+                md:px-8 md:py-3 md:text-base
+                lg:px-8 lg:py-3 lg:text-lg
+                xl:px-10 xl:py-4 xl:text-xl
+                rounded-lg font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
                 سجل الآن
             </a>
         </div>
