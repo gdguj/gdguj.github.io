@@ -16,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+
 </head>
 
 <body class="bg-custom ibm-plex-sans-arabic-regular">
@@ -141,15 +142,15 @@
                 <!-- <p class="text-gray-500">ملفات المتحدثين، السير الذاتية، ومواضيع العروض</p> -->
                 <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="p-6">
-                        <img src="static/logo/Expert.svg" alt="Speaker 1" class="w-64 h-64 mx-auto mb-4">
+                        <img src="static/assets/Expert.svg" alt="Speaker 1" class="w-64 h-64 mx-auto mb-4">
                         <p class="text-sm text-gray-400 ibm-plex-sans-arabic-light">خبير في الذكاء الاصطناعي</p>
                     </div>
                     <div class="p-6">
-                        <img src="static/logo/Expert.svg" alt="Speaker 2" class="w-64 h-64 mx-auto mb-4">
+                        <img src="static/assets/Expert.svg" alt="Speaker 2" class="w-64 h-64 mx-auto mb-4">
                         <p class="text-sm text-gray-400 ibm-plex-sans-arabic-light">خبير في الذكاء الاصطناعي</p>
                     </div>
                     <div class="p-6">
-                        <img src="static/logo/Expert.svg" alt="Speaker 3" class="w-64 h-64 mx-auto mb-4">
+                        <img src="static/assets/Expert.svg" alt="Speaker 3" class="w-64 h-64 mx-auto mb-4">
                         <p class="text-sm text-gray-400 ibm-plex-sans-arabic-light">خبير في الذكاء الاصطناعي</p>
                     </div>
                 </div>
@@ -165,16 +166,16 @@
                 <h2 class="text-2xl ibm-plex-sans-arabic-bold text-white mb-4">شركـــــــائنا</h2>
                 <div class="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
                     <div class="p-4">
-                        <img src="static/logo/image.svg" alt="Sponser 1" class="w-32 h-32 mx-auto mb-4">
+                        <img src="static/assets/image.svg" alt="Sponser 1" class="w-32 h-32 mx-auto mb-4">
                     </div>
                     <div class="p-4">
-                        <img src="static/logo/image.svg" alt="Sponser 2" class="w-32 h-32 mx-auto mb-4">
+                        <img src="static/assets/image.svg" alt="Sponser 2" class="w-32 h-32 mx-auto mb-4">
                     </div>
                     <div class="p-4">
-                        <img src="static/logo/image.svg" alt="Sponser 3" class="w-32 h-32 mx-auto mb-4">
+                        <img src="static/assets/image.svg" alt="Sponser 3" class="w-32 h-32 mx-auto mb-4">
                     </div>
                     <div class="p-4">
-                        <img src="static/logo/image.svg" alt="Sponser 4" class="w-32 h-32 mx-auto mb-4">
+                        <img src="static/assets/image.svg" alt="Sponser 4" class="w-32 h-32 mx-auto mb-4">
                     </div>
                 </div>
             </div>
@@ -394,37 +395,12 @@
             </div>
         </div>
     </footer>
-
-    <!-- ========== script ========== -->
     <script>
-        function updateCountdown() {
-            // التاريخ المستهدف: 20 سبتمبر
-            const targetDate = new Date("Sep 20, 2025 00:00:00").getTime();
-            const now = new Date().getTime();
-            const diff = targetDate - now;
+    updateCountdown();
 
-            if (diff <= 0) {
-                document.getElementById("countdown").innerHTML = "انتهى الوقت 🎉";
-                return;
-            }
-
-            // حساب الأيام والساعات والدقائق
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-            // تحديث القيم في HTML
-            document.getElementById("days").textContent = String(days).padStart(2, "0");
-            document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-            document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-        }
-
-        updateCountdown();
-
-        // تحديث كل دقيقة
-        setInterval(updateCountdown, 60000);
+    // تحديث كل دقيقة
+    setInterval(updateCountdown, 60000);
     </script>
-
 </body>
 
 
