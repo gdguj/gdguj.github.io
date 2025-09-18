@@ -74,3 +74,116 @@
 .bg-custom {
     background-color: var(--color-background);
 }
+
+/* ========== قسم الجدول الزمني ========== */
+.timeline {
+  background: #0a093d;
+  color: #fff;
+  padding: 96px 0; 
+  text-align: center;
+}
+
+.timeline h2 {
+  font-size: 65px;   
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.timeline .container {
+  max-width: 1200px;  
+  margin: 0 auto;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Timeline line */
+.timeline-spine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #E6E1F1;
+  transform: translateX(-50%);
+}
+
+/* List layout */
+.timeline ol {
+  display: grid;
+  row-gap: 96px;
+}
+
+.timeline ol li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px; /* base distance */
+  align-items: center;
+  position: relative;
+}
+
+.tl-left-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px; /* pushes left pill away */
+}
+
+.tl-right-wrap {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 60px;  /* pushes right pill away */
+}
+
+/* Rectangles */
+.tl-pill {
+  width: 350px;
+  height: 100px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 28px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dots */
+.tl-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #0a093d;
+  border: 2px solid #E6E1F1;
+  box-shadow: 0 0 0 5px rgba(230,225,241,0.32);
+  transform: translate(-50%, -50%);
+}
+
+/* For Mobile */
+@media (max-width: 768px) {
+  .timeline ol li {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .tl-left-wrap,
+  .tl-right-wrap {
+    padding: 0;
+  }
+
+  .tl-pill {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .timeline h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .timeline ol {
+    row-gap: 36px;
+  }
+}
