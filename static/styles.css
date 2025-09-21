@@ -1,23 +1,23 @@
 :root {
-    --color-blueviolet-100: #8236fc;
-    --color-blueviolet-200: #8236fc66;
-    --color-blueviolet-300: #8236fc4d;
-    --color-gainsboro: #e6e6e6;
-    --color-gray-300: #ffffff0a;
-    --color-white: #fff;
-    --color-lavender-100: #f6f0ffc9;
-    --color-lavender-200: #e9dfff26;
-    --color-dimgray-100: #707070;
-    --color-dimgray-200: #575757;
-    --color-whitesmoke: #f4f4f4;
-    --color-darkgray: #959595;
-    --color-black: #000;
-    --color-background: #00002b;
-    --color-gray-100: #fefefe;
-    --color-antiquewhite: #ffe9d9;
-    --color-linen: #fff1e6;
-    --color-darkslateblue: #342d67;
-    --color-darkslategray: #373738;
+  --color-blueviolet-100: #8236fc;
+  --color-blueviolet-200: #8236fc66;
+  --color-blueviolet-300: #8236fc4d;
+  --color-gainsboro: #e6e6e6;
+  --color-gray-300: #ffffff0a;
+  --color-white: #fff;
+  --color-lavender-100: #f6f0ffc9;
+  --color-lavender-200: #e9dfff26;
+  --color-dimgray-100: #707070;
+  --color-dimgray-200: #575757;
+  --color-whitesmoke: #f4f4f4;
+  --color-darkgray: #959595;
+  --color-black: #000;
+  --color-background: #00002b;
+  --color-gray-100: #fefefe;
+  --color-antiquewhite: #ffe9d9;
+  --color-linen: #fff1e6;
+  --color-darkslateblue: #342d67;
+  --color-darkslategray: #373738;
 }
 
 
@@ -72,15 +72,64 @@
 
 
 .bg-custom {
-    background-color: var(--color-background);
+  background-color: var(--color-background);
 }
 
 .custom-gap-section {
-    gap: 0px;
+  gap: 0px;
 }
 
 @media (min-width: 768px) {
-    .custom-gap-section {
-        gap: 2rem; /* Equivalent to md:gap-8 (1 unit = 0.25rem, so 8 units = 2rem) */
-    }
+  .custom-gap-section {
+    gap: 2rem;
+    /* Equivalent to md:gap-8 (1 unit = 0.25rem, so 8 units = 2rem) */
+  }
+}
+
+/* Contact form: transparent, no border or background */
+#contact-form-wrapper {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Restore original form control styles (dark background, subtle border, white text) */
+#contact-form-wrapper form input,
+#contact-form-wrapper form textarea {
+  background: #0f0b2a !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+/* Focus state: subtle glow */
+#contact-form-wrapper form input:focus,
+#contact-form-wrapper form textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(130, 54, 252, 0.14) !important;
+}
+
+/* Make the submit button transparent background variant optional (keep visible) */
+/* Submit button: restore strong gradient and full visibility */
+#contact-form-wrapper form button[type="submit"] {
+  background: linear-gradient(90deg, #A75BFF, #8236FC) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Prevent inputs/textareas from scaling on hover/focus */
+#contact-form-wrapper form input,
+#contact-form-wrapper form textarea {
+  transition: box-shadow 150ms ease, background-color 150ms ease, border-color 150ms ease;
+  transform: none !important;
+}
+
+#contact-form-wrapper form input:hover,
+#contact-form-wrapper form textarea:hover,
+#contact-form-wrapper form input:focus,
+#contact-form-wrapper form textarea:focus {
+  transform: none !important;
 }

@@ -17,26 +17,35 @@
         rel="stylesheet">
 
 
+
 </head>
 
 <body class="bg-custom ibm-plex-sans-arabic-regular">
+    <a id="top"></a>
 
     <!-- ========== قسم الرأس ========== -->
     <!-- عضو الفريق: ابتهال -->
-    <header class="fixed top-0 left-0 w-full py-2 sm:py-3 md:py-4 z-20 px-3 sm:px-4 md:px-0 transition-all duration-300">
-        <div class="container mx-auto px-4 sm:px-6 md:px-8 bg-black/80 backdrop-blur-sm rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
-            
+    <header class="w-full py-2 sm:py-3 md:py-4 px-3 sm:px-4 md:px-0 transition-all duration-300">
+        <div
+            class="container mx-auto px-4 sm:px-6 md:px-8 bg-black/80 backdrop-blur-sm rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
+
             <!-- Header Top Row -->
             <div class="flex justify-between items-center h-14 sm:h-16 md:h-16">
                 <!-- Logo -->
                 <div class="flex items-center gap-2">
-                    <img src="static/logo/logo-white.svg" alt="Logo" class="h-7 sm:h-8 md:h-9 lg:h-10">
+                    <a href="#top" aria-label="الانتقال للأعلى" class="block">
+                        <img src="static/logo/logo-white.svg" alt="Logo" class="h-7 sm:h-8 md:h-9 lg:h-10">
+                    </a>
                 </div>
 
                 <!-- Hamburger Button (Mobile) -->
-                <button id="mobile-menu-toggle" class="md:hidden flex items-center px-2 py-1 sm:px-3 sm:py-2 text-white focus:outline-none transition-transform duration-200" aria-label="فتح القائمة">
-                    <svg class="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <button id="mobile-menu-toggle"
+                    class="md:hidden flex items-center px-2 py-1 sm:px-3 sm:py-2 text-white focus:outline-none transition-transform duration-200"
+                    aria-label="فتح القائمة">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
 
@@ -47,20 +56,32 @@
                         <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الموقع</a></li>
                         <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأجندة</a></li>
                         <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">التسجيل</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة المتكررة</a></li>
+                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة
+                                المتكررة</a></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- Mobile Navigation Collapse (Bootstrap-style) -->
-            <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+            <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out"
+                style="max-height: 0;">
                 <nav class="border-t border-white/10 pt-3 pb-3 sm:pt-4 sm:pb-4">
                     <ul class="flex flex-col text-white text-sm sm:text-base">
-                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a></li>
-                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a></li>
-                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a></li>
-                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a></li>
-                        <li><a href="#" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة المتكررة</a></li>
+                        <li><a href="#"
+                                class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a>
+                        </li>
+                        <li><a href="#"
+                                class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة
+                                المتكررة</a></li>
                     </ul>
                 </nav>
             </div>
@@ -73,12 +94,17 @@
         class="relative hero-bg bg-gradient-to-br from-purple-800 via-purple-900 to-black h-screen w-full flex items-center justify-center text-center overflow-hidden"
         style="background-image: url('static/background.png'); background-size: cover; background-position: center;">
 
-        <div class="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-6 md:px-8">
-            <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-4 sm:mb-4 md:mb-6 leading-tight">ملتقى كود الخبرة</h1>
-            <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl text-gray-200 font-medium mb-6 sm:mb-6 md:mb-8 leading-relaxed">
+        <div
+            class="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto px-6 sm:px-6 md:px-8">
+            <h1
+                class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-4 sm:mb-4 md:mb-6 leading-tight">
+                ملتقى كود الخبرة</h1>
+            <p
+                class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl text-gray-200 font-medium mb-6 sm:mb-6 md:mb-8 leading-relaxed">
                 نسمع لقصص النخبة ونكتشف أكواد نجاحاتهم
             </p>
-            <p class="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl text-gray-200 font-regular mb-8 sm:mb-8 md:mb-10">
+            <p
+                class="text-base sm:text-lg md:text-lg lg:text-xl xl:text-xl text-gray-200 font-regular mb-8 sm:mb-8 md:mb-10">
                 الوقت المتبقي لإغلاق التسجيل
             </p>
 
@@ -128,9 +154,30 @@
     <!-- ========== فاطمه عادل Divider ========== -->
     <section class="divider py-16">
         <div class="container mx-auto px-4">
-            <!-- أضف المحتوى المخصص هنا -->
-            <div class="bg-gray-100 p-12 rounded-lg border-2 border-dashed border-gray-300 text-center">
-                <h2 class="text-2xl font-semibold text-gray-600 mb-2">Divider Place</h2>
+            <div class="flex items-center justify-between px-6 sm:px-12">
+                <!-- Left chevron (filled, bold) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24"
+                        class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)] transform rotate-180"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
+
+                <!-- Center thin gradient line stretched wide -->
+                <div class="flex-1 mx-6">
+                    <div
+                        style="height:2px; border-radius:9999px; background: linear-gradient(90deg, rgba(130,54,252,0.0) 0%, #CFA8FF 25%, #A07BFF 50%, #CFA8FF 75%, rgba(130,54,252,0.0) 100%); box-shadow: 0 0 18px rgba(130,54,252,0.25);">
+                    </div>
+                </div>
+
+                <!-- Right chevron (filled, mirrored) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24" class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)]"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -186,46 +233,52 @@
 
     <!-- ========== قسم تفاصيل الفعالية ========== -->
     <!-- عضو الفريق: سلطانه -->
-     <section class="event-details min-h-[800px] relative bg-custom">
-      <div class="absolute inset-0 z-0">
-        <img src="static/img/backgroundevent.png" alt="خلفية" class="w-full h-full object-cover"/>
-      </div>
-      <div class="container mx-auto px-4 relative z-10 py-16">
-        <h1 class="text-2xl font-semibold mb-16 text-white text-center">تفاصيل الحدث</h1>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="order-2 lg:order-1 w-full flex justify-center">
-            <div class="relative w-full max-w-[700px]">
-              <img src="static/img/location.png" alt="موقع الحدث" class="w-full h-[360px] object-cover rounded-[25px] shadow-lg"/>
-              <div class="absolute bottom-4 right-4">
-                <a href="https://maps.app.goo.gl/81T4VxvWVVAaUdoX6?g_st=ipc" target="_blank" rel="noopener"      class="inline-block bg-[#8236FC] hover:bg-[#7029ED] text-white px-8 py-3 rounded-2xl transition-colors duration-300 shadow-lg">احصل على الإتجاهات</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="space-y-4 w-full max-w-[700px]">
-            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
-              <div class="px-4 py-3">
-                <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">موقع الملتقى</h2>
-                <p class="text-sm text-gray-300">جدة، جامعة UBT</p>
-              </div>
-            </div>
-
-            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
-              <div class="px-4 py-3">
-                <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">تاريخ الملتقى</h2>
-                <p class="text-sm text-gray-300">3 أكتوبر 2025</p>
-            </div>
-            </div>
-
-            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
-              <div class="px-4 py-3">
-                <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">ساعات الملتقى</h2>
-                <p class="text-sm text-gray-300">4:00 م إلى 8:00 م</p>
-            </div>
-            </div>
-          </div>
+    <section class="event-details min-h-[800px] relative bg-custom">
+        <div class="absolute inset-0 z-0">
+            <img src="static/img/backgroundevent.png" alt="خلفية" class="w-full h-full object-cover" />
         </div>
-      </div>
+        <div class="container mx-auto px-4 relative z-10 py-16">
+            <h1 class="text-2xl font-semibold mb-16 text-white text-center">تفاصيل الحدث</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="order-2 lg:order-1 w-full flex justify-center">
+                    <div class="relative w-full max-w-[700px]">
+                        <img src="static/img/location.png" alt="موقع الحدث"
+                            class="w-full h-[360px] object-cover rounded-[25px] shadow-lg" />
+                        <div class="absolute bottom-4 right-4">
+                            <a href="https://maps.app.goo.gl/81T4VxvWVVAaUdoX6?g_st=ipc" target="_blank" rel="noopener"
+                                class="inline-block bg-[#8236FC] hover:bg-[#7029ED] text-white px-8 py-3 rounded-2xl transition-colors duration-300 shadow-lg">احصل
+                                على الإتجاهات</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4 w-full max-w-[700px]">
+                    <div
+                        class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                        <div class="px-4 py-3">
+                            <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">موقع الملتقى</h2>
+                            <p class="text-sm text-gray-300">جدة، جامعة UBT</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                        <div class="px-4 py-3">
+                            <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">تاريخ الملتقى</h2>
+                            <p class="text-sm text-gray-300">3 أكتوبر 2025</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+                        <div class="px-4 py-3">
+                            <h2 class="text-lg md:text-2xl font-semibold text-white mb-2">ساعات الملتقى</h2>
+                            <p class="text-sm text-gray-300">4:00 م إلى 8:00 م</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ========== قسم الجدول الزمني ========== -->
@@ -234,111 +287,219 @@
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl md:text-4xl lg:text-6xl font-semibold mb-12 md:mb-24">رحلة الملتقى</h2>
 
-        <div class="relative max-w-4xl mx-auto px-0 md:px-5">
-        <!-- spine -->
-        <span class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 md:transform md:-translate-x-1/2" style="background: #E6E1F1;"></span>
-        
-        <ol class="grid gap-12 md:gap-24 list-none p-0 m-0">
-        <!-- L -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="block md:flex md:justify-end md:pr-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">يناير 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">انطلاق الفكرة وبداية التخطيط</div>
-            </div>
-          </div>
-          <div class="hidden md:block"></div>
-        </li>
+            <div class="relative max-w-4xl mx-auto px-0 md:px-5">
+                <!-- spine -->
+                <span
+                    class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 md:transform md:-translate-x-1/2"
+                    style="background: #E6E1F1;"></span>
 
-        <!-- R -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="hidden md:block"></div>
-          <div class="block md:flex md:justify-start md:pl-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">مارس 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">اختيار المتحدثين والخبراء</div>
-            </div>
-          </div>
-        </li>
+                <ol class="grid gap-12 md:gap-24 list-none p-0 m-0">
+                    <!-- L -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="block md:flex md:justify-end md:pr-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">يناير 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">انطلاق الفكرة
+                                    وبداية التخطيط</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block"></div>
+                    </li>
 
-        <!-- L -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="block md:flex md:justify-end md:pr-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">مايو 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">التحضيرات والإعداد النهائي</div>
-            </div>
-          </div>
-          <div class="hidden md:block"></div>
-        </li>
+                    <!-- R -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="hidden md:block"></div>
+                        <div class="block md:flex md:justify-start md:pl-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">مارس 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">اختيار المتحدثين
+                                    والخبراء</div>
+                            </div>
+                        </div>
+                    </li>
 
-        <!-- R -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="hidden md:block"></div>
-          <div class="block md:flex md:justify-start md:pl-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">سبتمبر 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">انطلاق ملتقى كود الخبرة</div>
-            </div>
-          </div>
-        </li>
+                    <!-- L -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="block md:flex md:justify-end md:pr-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">مايو 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">التحضيرات والإعداد
+                                    النهائي</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block"></div>
+                    </li>
 
-        <!-- L -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="block md:flex md:justify-end md:pr-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">أكتوبر 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">المتابعة وتقييم النتائج</div>
-            </div>
-          </div>
-          <div class="hidden md:block"></div>
-        </li>
+                    <!-- R -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="hidden md:block"></div>
+                        <div class="block md:flex md:justify-start md:pl-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">سبتمبر 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">انطلاق ملتقى كود
+                                    الخبرة</div>
+                            </div>
+                        </div>
+                    </li>
 
-        <!-- R -->
-        <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
-          <span class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10" style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
-          <div class="hidden md:block"></div>
-          <div class="block md:flex md:justify-start md:pl-16">
-            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
-              <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">ديسمبر 2024</div>
-              <div class="text-sm md:text-base font-normal leading-snug text-white">التخطيط للنسخة القادمة</div>
+                    <!-- L -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="block md:flex md:justify-end md:pr-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">أكتوبر 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">المتابعة وتقييم
+                                    النتائج</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block"></div>
+                    </li>
+
+                    <!-- R -->
+                    <li class="block md:grid md:grid-cols-2 md:gap-32 md:items-center relative ml-16 md:ml-0">
+                        <span
+                            class="absolute -left-8 md:left-1/2 top-10 md:top-1/2 w-4 md:w-5 h-4 md:h-5 rounded-full border-2 transform -translate-x-1/2 md:-translate-y-1/2 z-10"
+                            style="background: #0a093d; border-color: #E6E1F1; box-shadow: 0 0 0 5px rgba(230,225,241,0.32);"></span>
+                        <div class="hidden md:block"></div>
+                        <div class="block md:flex md:justify-start md:pl-16">
+                            <div class="w-full max-w-sm md:w-80 h-auto min-h-20 md:h-24 rounded-2xl md:rounded-3xl flex flex-col justify-center items-end md:items-center text-right md:text-center p-4"
+                                style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.22); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);">
+                                <div class="text-sm md:text-base font-semibold mb-2" style="color: #8236fc;">ديسمبر 2024
+                                </div>
+                                <div class="text-sm md:text-base font-normal leading-snug text-white">التخطيط للنسخة
+                                    القادمة</div>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
             </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
+        </div>
+    </section>
 
     <!-- ========== Divider ========== -->
     <section class="divider py-16">
         <div class="container mx-auto px-4">
-            <!-- أضف المحتوى المخصص هنا -->
-            <div class="bg-gray-100 p-12 rounded-lg border-2 border-dashed border-gray-300 text-center">
-                <h2 class="text-2xl font-semibold text-gray-600 mb-2">Divider Place</h2>
+            <div class="flex items-center justify-between px-6 sm:px-12">
+                <!-- Left chevron (filled, bold) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24"
+                        class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)] transform rotate-180"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
+
+                <!-- Center thin gradient line stretched wide -->
+                <div class="flex-1 mx-6">
+                    <div
+                        style="height:2px; border-radius:9999px; background: linear-gradient(90deg, rgba(130,54,252,0.0) 0%, #CFA8FF 25%, #A07BFF 50%, #CFA8FF 75%, rgba(130,54,252,0.0) 100%); box-shadow: 0 0 18px rgba(130,54,252,0.25);">
+                    </div>
+                </div>
+
+                <!-- Right chevron (filled, mirrored) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24" class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)]"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ========== قسم التواصل ========== -->
     <!-- عضو الفريق: خالد -->
-    <section class="contact py-16">
+    <section class="contact py-16 bg-custom relative overflow-hidden">
         <div class="container mx-auto px-4">
-            <!-- أضف محتوى التواصل هنا -->
-            <div class="bg-gray-100 p-12 rounded-lg border-2 border-dashed border-gray-300 text-center">
-                <h2 class="text-2xl font-semibold text-gray-600 mb-2">قسم التواصل</h2>
-                <p class="text-gray-500">معلومات التواصل، روابط وسائل التواصل الاجتماعي، وقنوات التواصل</p>
-                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p class="text-sm text-gray-400">نموذج التواصل</p>
+            <div class="relative bg-transparent">
+                <div class="relative h-[420px]">
+                    <!-- Left visual column (fixed left) -->
+                    <div class="absolute inset-y-0 left-6 lg:left-12 lg:w-1/2 flex items-center p-8 lg:p-12">
+                        <div class="relative w-full">
+
+                            <img id="shape-star" src="static/img/star.png" alt="star-bg"
+                                class="absolute -left-20 -top-20 w-105 opacity-80 pointer-events-none"
+                                style="transform: translate(95px, -74px);" />
+                            <img id="shape-highlights" src="static/img/highlights.png" alt="highlights"
+                                class="absolute -left-8 bottom-24 w-72 opacity-90 pointer-events-none z-10"
+                                style="transform: translate(0px, 219px);" />
+                            <img id="shape-lightpulp" src="static/img/lightpulp.png" alt="lightbulb"
+                                class="relative z-20 w-64 lg:w-72 drop-shadow-2xl -mb-6 mx-auto"
+                                style="transform: translate(-75px, 125px);" />
+                            <div id="contact-text"
+                                class="relative z-30 mt-6 lg:mt-0 lg:-ml-6 text-right max-w-lg mx-auto"
+                                style="transform: translate(-6px, -300px);">
+                                <h2 id="contact-heading" class="text-4xl lg:text-5xl font-extrabold text-white mb-4"
+                                    style="font-size:57px">
+                                    لديك فكرة شاركنا !</h2>
+                                <p id="contact-sub" class="text-lg text-white/80">تريد الانضمام او الاقتراح<br />تفضل
+                                    بالتواصل معنا</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p class="text-sm text-gray-400">تفاصيل التواصل</p>
+
+                    <!-- Right form column (fixed right) -->
+                    <div class="absolute inset-y-0 right-6 lg:right-12 lg:w-1/2 flex items-center p-6 lg:p-12">
+                        <div class="w-full" dir="rtl">
+                            <div id="contact-form-wrapper"
+                                class="bg-[#0b0730]/80 backdrop-blur-md rounded-2xl p-6 lg:p-8 shadow-2xl border border-white/5">
+                                <h3 class="text-2xl font-semibold text-white mb-3 text-center">تواصل معنا</h3>
+                                <p class="text-sm text-white/60 mb-6 text-center">يمكنك التواصل معنا عبر النموذج التالي
+                                </p>
+
+                                <form class="space-y-4 text-right" action="#" method="post">
+                                    <div>
+                                        <label class="sr-only">الاسم</label>
+                                        <input type="text" name="name" placeholder="الاسم"
+                                            class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                                    </div>
+                                    <div>
+                                        <label class="sr-only">رقم الجوال</label>
+                                        <input type="text" name="phone" placeholder="رقم الجوال"
+                                            class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                                    </div>
+                                    <div>
+                                        <label class="sr-only">الإيميل</label>
+                                        <input type="email" name="email" placeholder="الإيميل"
+                                            class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+                                    </div>
+                                    <div>
+                                        <label class="sr-only">الوصف</label>
+                                        <textarea name="message" rows="4" placeholder="الوصف"
+                                            class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                                    </div>
+
+                                    <div class="flex justify-center">
+                                        <button type="submit"
+                                            class="inline-block w-full md:w-3/4 lg:w-2/3 xl:w-1/2 bg-gradient-to-r from-[#A75BFF] to-[#8236FC] text-white px-6 py-3 rounded-full font-medium shadow-lg transition-colors">إرسال</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -348,9 +509,30 @@
     <!-- ========== Divider ========== -->
     <section class="divider py-16">
         <div class="container mx-auto px-4">
-            <!-- أضف المحتوى المخصص هنا -->
-            <div class="bg-gray-100 p-12 rounded-lg border-2 border-dashed border-gray-300 text-center">
-                <h2 class="text-2xl font-semibold text-gray-600 mb-2">Divider Place</h2>
+            <div class="flex items-center justify-between px-6 sm:px-12">
+                <!-- Left chevron (filled, bold) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24"
+                        class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)] transform rotate-180"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
+
+                <!-- Center thin gradient line stretched wide -->
+                <div class="flex-1 mx-6">
+                    <div
+                        style="height:2px; border-radius:9999px; background: linear-gradient(90deg, rgba(130,54,252,0.0) 0%, #CFA8FF 25%, #A07BFF 50%, #CFA8FF 75%, rgba(130,54,252,0.0) 100%); box-shadow: 0 0 18px rgba(130,54,252,0.25);">
+                    </div>
+                </div>
+
+                <!-- Right chevron (filled, mirrored) -->
+                <div class="flex items-center justify-center" style="width:44px; height:44px;">
+                    <svg viewBox="0 0 24 24" class="w-full h-full drop-shadow-[0_0_12px_rgba(130,54,252,0.55)]"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.6 12l6.4 6-1.6 1.6L4 12l9.4-7.6L16 6l-6.4 6z" fill="#8236FC" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -358,37 +540,38 @@
     <!-- ========== قسم النداء ========== -->
     <!-- عضو الفريق: محمد -->
     <section dir="rtl" class="main-section bg-custom py-12 relative overflow-hidden ">
-  <!-- وهج زخرفي -->
-  <div class="pointer-events-none absolute -top-10 right-12 h-56 w-56 rounded-full bg-purple-600/40 blur-3xl"></div>
+        <!-- وهج زخرفي -->
+        <div class="pointer-events-none absolute -top-10 right-12 h-56 w-56 rounded-full bg-purple-600/40 blur-3xl">
+        </div>
 
-  <div class="container mx-auto px-2">
-    <div class="flex flex-col md:flex-row items-center justify-center">
-      <!-- النص والزر -->
-      <div class="text-white text-center md:text-right px-12 mx-2">
-        <h2 class="text-4xl md:text-6xl font-extrabold leading-snug">
-          ماذا تنتظر؟
-        </h2>
-        <p class="mt-5 text-base md:text-2xl text-white/80">
-          سجّل الآن واكتشف أسرار الخبرة من حروف الخبراء
-        </p>
+        <div class="container mx-auto px-2">
+            <div class="flex flex-col md:flex-row items-center justify-center">
+                <!-- النص والزر -->
+                <div class="text-white text-center md:text-right px-12 mx-2">
+                    <h2 class="text-4xl md:text-6xl font-extrabold leading-snug">
+                        ماذا تنتظر؟
+                    </h2>
+                    <p class="mt-5 text-base md:text-2xl text-white/80">
+                        سجّل الآن واكتشف أسرار الخبرة من حروف الخبراء
+                    </p>
 
-        <div class="mt-9">
-            <a href="#signup"
-            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm md:text-base font-semibold
+                    <div class="mt-9">
+                        <a href="#signup"
+                            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm md:text-base font-semibold
                    bg-white/10 backdrop-blur-md border border-white/20 text-white
                    hover:bg-white/20 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-transparent">
-           سجّل الآن
-         </a>
-        </div>
-      </div>
+                            سجّل الآن
+                        </a>
+                    </div>
+                </div>
 
-      <!-- مكان الشعار/العنصر البصري -->
-      <div class="flex justify-center items-center px-0 mx-0">
-        <img src="/static/logo/element.svg" class="w-[230px] "> 
-      </div>
-    </div>
-  </div>
-</section>
+                <!-- مكان الشعار/العنصر البصري -->
+                <div class="flex justify-center items-center px-0 mx-0">
+                    <img src="/static/logo/element.svg" class="w-[230px] ">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ========== قسم الأسئلة الشائعة ========== -->
     <!-- عضو الفريق: عبدالله -->
@@ -401,54 +584,67 @@
                     <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
                         <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
                             <span>اين سيتواجد الملتقى؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300"
+                            style="max-height: 0;">
                             <div class="pb-3">
                                 سيكون الملتقى في جامعة الأعمال و التقنية UBT - مبنى المسرح الرئيسي.
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
                         <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
                             <span>متى سيكون الملتقى؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
-                        </button>    
-                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                        </button>
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300"
+                            style="max-height: 0;">
                             <div class="pb-3">
                                 سيكون الملتقى يوم السبت الموافق 21 سبتمبر 2024 من الساعة 4:00 عصراً حتى 9:00 مساءً.
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
                         <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
                             <span>هل التسجيل مجاني؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300"
+                            style="max-height: 0;">
                             <div class="pb-3">
                                 نعم، التسجيل في الملتقى مجاني تماماً ولكن الأماكن محدودة لذلك ننصح بالتسجيل المبكر.
                             </div>
-                        </div>    
+                        </div>
                     </div>
                     <div class="bg-[#2E266F] p-2 rounded-lg text-right overflow-hidden">
                         <button class="w-full flex justify-between items-center px-4 py-3 focus:outline-none">
                             <span>كيف يمكنني التسجيل؟</span>
-                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg class="w-4 h-4 transform transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300" style="max-height: 0;">
+                        <div class="content overflow-hidden transition-all duration-300 ease-in-out px-4 text-sm text-gray-300"
+                            style="max-height: 0;">
                             <div class="pb-3">
-                                يمكنك التسجيل من خلال الضغط على زر "التسجيل" في أعلى الصفحة أو من خلال الرابط المباشر في الموقع.
+                                يمكنك التسجيل من خلال الضغط على زر "التسجيل" في أعلى الصفحة أو من خلال الرابط المباشر في
+                                الموقع.
                             </div>
-                        </div>      
+                        </div>
                     </div>
                 </div>
             </div>
@@ -458,71 +654,138 @@
     <!-- ========== قسم التذييل ========== -->
     <!-- عضو الفريق: سلطانة -->
     <footer class="bg-black text-white pt-8 sm:pt-12 pb-4 sm:pb-6 mt-12 sm:mt-16 border-t border-[#2E266F]/40">
-    <div class="container mx-auto px-4 sm:px-6">
-        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-center sm:text-right">
-            <img src="static/logo/logo-white.svg" alt="شعار كود الخبرة" class="h-16 sm:h-20 w-auto mx-auto sm:mx-0"/>
-            <p class="text-sm sm:text-base text-white/80 max-w-sm leading-relaxed mx-auto sm:mx-0">
-            كود الخبرة ملتقى فريد من نوعه حيث يكشف فيه الغطاء عن أسرار الخبرة في المجالات التقنية</p>
-        </div>
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 text-center sm:text-right">
+                    <img src="static/logo/logo-white.svg" alt="شعار كود الخبرة"
+                        class="h-16 sm:h-20 w-auto mx-auto sm:mx-0" />
+                    <p class="text-sm sm:text-base text-white/80 max-w-sm leading-relaxed mx-auto sm:mx-0">
+                        كود الخبرة ملتقى فريد من نوعه حيث يكشف فيه الغطاء عن أسرار الخبرة في المجالات التقنية</p>
+                </div>
 
-        <div class="relative mx-auto md:mx-0">
-            <div class="group relative flex items-center justify-center gap-3 md:gap-6 px-4 md:px-16 py-3">
-            <!-- Left Arrow (All screens) -->
-            <svg viewBox="0 0 24 24"
-                class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC]
+                <div class="relative mx-auto md:mx-0">
+                    <div class="group relative flex items-center justify-center gap-3 md:gap-6 px-4 md:px-16 py-3">
+                        <!-- Left Arrow (All screens) -->
+                        <svg viewBox="0 0 24 24" class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC]
                         transition-all duration-300 group-hover:-translate-x-1 drop-shadow-[0_0_0_rgba(130,54,252,0)]
                         group-hover:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
-                <path d="M10 3l8 9-8 9h-4l8-9-8-9h4z" fill="currentColor"/>
-            </svg>
-            
-            <!-- Buttons Container -->
-            <div class="flex flex-row gap-3 md:gap-4">
-                <a href="#programming-team"
-                class="group/btn inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
+                            <path d="M10 3l8 9-8 9h-4l8-9-8-9h4z" fill="currentColor" />
+                        </svg>
+
+                        <!-- Buttons Container -->
+                        <div class="flex flex-row gap-3 md:gap-4">
+                            <a href="#programming-team"
+                                class="group/btn inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
                 bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-xs sm:text-sm font-medium
                 ring-1 ring-white/10 hover:ring-white/20 shadow-lg shadow-[#6C2BD9]/30 hover:shadow-[#8236FC]/40 transition-all duration-300 hover:scale-[1.03]">
-        <span>فريق العمل</span>
-        <span class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
-            <img src="static/img/people.png" alt="أيقونة فريق العمل" class="w-5 h-6 md:w-6 md:h-7 group-hover/btn:scale-110"/>
-        </span>
-        </a>
+                                <span>فريق العمل</span>
+                                <span
+                                    class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
+                                    <img src="static/img/people.png" alt="أيقونة فريق العمل"
+                                        class="w-5 h-6 md:w-6 md:h-7 group-hover/btn:scale-110" />
+                                </span>
+                            </a>
 
-        <a href="https://x.com/codeexper?s=21&t=hh1UjIeFzndoRE60fmXBJQ" target="_blank" aria-label="حساب X"
-        class="group/x inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
+                            <a href="https://x.com/codeexper?s=21&t=hh1UjIeFzndoRE60fmXBJQ" target="_blank"
+                                aria-label="حساب X" class="group/x inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
                 bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-xs sm:text-sm font-medium
                 ring-1 ring-white/10 hover:ring-white/20
                 shadow-lg shadow-[#6C2BD9]/30 hover:shadow-[#8236FC]/40
                 transition-all duration-300 hover:scale-[1.03]">
-        <span>تابعنا على</span>
-        <span class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
-            <img src="static/img/xGDG.png" alt="حساب X" class="w-4 h-4 md:w-5 md:h-5 group-hover/x:scale-110"/>
-        </span>
-        </a>
-            </div>
-            
-            <!-- Right Arrow (All screens) -->
-            <svg viewBox="0 0 24 24"
-                class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC]
+                                <span>تابعنا على</span>
+                                <span
+                                    class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
+                                    <img src="static/img/xGDG.png" alt="حساب X"
+                                        class="w-4 h-4 md:w-5 md:h-5 group-hover/x:scale-110" />
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- Right Arrow (All screens) -->
+                        <svg viewBox="0 0 24 24" class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC]
                         transition-all duration-300 group-hover:translate-x-1 drop-shadow-[0_0_0_rgba(130,54,252,0)]
                         group-hover:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
-                <path d="M14 3L6 12l8 9h4L10 12 18 3h-4z" fill="currentColor"/>
-            </svg>
+                            <path d="M14 3L6 12l8 9h4L10 12 18 3h-4z" fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 sm:mt-8">
+                <hr class="border-t border-white/20 mb-3 sm:mb-4">
+                <p class="text-center text-white/60 text-xs sm:text-sm px-2">جميع الحقوق محفوظة لدى مجموعة مطوري جوجل
+                    بجامعة جدة 2025</p>
             </div>
         </div>
-        </div>
-
-        <div class="mt-6 sm:mt-8">
-        <hr class="border-t border-white/20 mb-3 sm:mb-4">
-        <p class="text-center text-white/60 text-xs sm:text-sm px-2">جميع الحقوق محفوظة لدى مجموعة مطوري جوجل بجامعة جدة 2025</p>
-        </div>
-    </div>
     </footer>
     <script>
-    updateCountdown();
+        updateCountdown();
 
-    // تحديث كل دقيقة
-    setInterval(updateCountdown, 1000);
+        // تحديث كل دقيقة
+        setInterval(updateCountdown, 1000);
     </script>
+    <!-- Back To Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 z-60 p-3 rounded-full bg-gradient-to-br from-[#A75BFF] to-[#8236FC] text-white shadow-lg hidden"
+        aria-label="العودة لأعلى">
+        <!-- chevron up -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M10 3a1 1 0 01.7.3l6 6a1 1 0 11-1.4 1.4L10 5.4 4.7 10.7A1 1 0 113.3 9.3l6-6A1 1 0 0110 3z"
+                clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <script>
+        // Back to top show/hide and smooth scroll
+        (function () {
+            const btn = document.getElementById('backToTop');
+            const offset = 300;
+
+            function checkScroll() {
+                if (!btn) return;
+                if (window.scrollY > offset) btn.classList.remove('hidden'); else btn.classList.add('hidden');
+            }
+
+            window.addEventListener('scroll', checkScroll);
+
+            btn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // initial check
+            checkScroll();
+        })();
+    </script>
+
+    <script>
+        // Ensure the current inline contact text position/size are saved to localStorage
+        (function () {
+            try {
+                const LS_KEY = 'contact-text-pos';
+                if (!localStorage.getItem(LS_KEY)) {
+                    const wrapper = document.getElementById('contact-text');
+                    const heading = document.getElementById('contact-heading');
+                    if (wrapper && heading) {
+                        // Attempt to parse inline transform: translate(Xpx, Ypx)
+                        let x = 0, y = 0;
+                        const t = wrapper.getAttribute('style') || '';
+                        const m = t.match(/translate\((-?\d+)px,\s*(-?\d+)px\)/);
+                        if (m) { x = parseInt(m[1], 10); y = parseInt(m[2], 10); }
+                        // Parse heading font-size (px)
+                        let size = 36;
+                        const s = heading.getAttribute('style') || '';
+                        const ms = s.match(/font-size:\s*([0-9.]+)px/);
+                        if (ms) size = parseInt(ms[1], 10);
+                        localStorage.setItem(LS_KEY, JSON.stringify({ x, y, size }));
+                    }
+                }
+            } catch (e) {
+                console.warn('Could not persist contact-text-pos:', e);
+            }
+        })();
+    </script>
+
 </body>
+
 </html>
