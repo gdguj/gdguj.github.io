@@ -52,6 +52,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// End Head
+
+// CountDown
+function updateCountdown() {
+    // التاريخ المستهدف: 20 سبتمبر
+    const targetDate = new Date("Sep 20, 2025 00:00:00").getTime();
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+        document.getElementById("countdown").innerHTML = "انتهى الوقت 🎉";
+        return;
+    }
+
+    // حساب الأيام والساعات والدقائق
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+    // تحديث القيم في HTML
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+    document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+}
+// End Countdown
 
 // FAQ with smooth transitions
 document.addEventListener("DOMContentLoaded", () => {
