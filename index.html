@@ -184,25 +184,46 @@
 
     <!-- ========== قسم تفاصيل الفعالية ========== -->
     <!-- عضو الفريق: سلطانه -->
-    <section class="event-details py-16">
-        <div class="container mx-auto px-4">
-            <!-- أضف تفاصيل الفعالية هنا -->
-            <div class="bg-white p-12 rounded-lg border-2 border-dashed border-gray-300 text-center shadow-sm">
-                <h2 class="text-2xl font-semibold text-gray-600 mb-2">قسم تفاصيل الفعالية</h2>
-                <p class="text-gray-500">التاريخ، الوقت، الموقع، جدول الأعمال، وتفاصيل الفعالية</p>
-                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <p class="text-sm text-gray-400">التاريخ والوقت</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <p class="text-sm text-gray-400">الموقع</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-lg">
-                        <p class="text-sm text-gray-400">التسجيل</p>
-                    </div>
-                </div>
+     <section class="event-details min-h-[800px] relative bg-custom">
+      <div class="absolute inset-0 z-0">
+        <img src="static/img/backgroundevent.png" alt="خلفية" class="w-full h-full object-cover"/>
+      </div>
+      <div class="container mx-auto px-4 relative z-10 py-16">
+        <h1 class="text-2xl font-semibold mb-16 text-white text-center">تفاصيل الحدث</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="order-2 lg:order-1 w-full flex justify-center">
+            <div class="relative w-full max-w-[700px]">
+              <img src="static/img/location.png" alt="موقع الحدث" class="w-full h-[360px] object-cover rounded-[25px] shadow-lg"/>
+              <div class="absolute bottom-4 right-4">
+                <a href="https://maps.app.goo.gl/81T4VxvWVVAaUdoX6?g_st=ipc" target="_blank" rel="noopener"      class="inline-block bg-[#8236FC] hover:bg-[#7029ED] text-white px-8 py-3 rounded-2xl transition-colors duration-300 shadow-lg">احصل على الإتجاهات</a>
+              </div>
             </div>
+          </div>
+          
+          <div class="space-y-4 w-full max-w-[700px]">
+            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div class="px-4 py-3">
+                <h2 class="text-2xl font-semibold text-white mb-2">موقع الملتقى</h2>
+                <p class="text-sm text-gray-300">جدة، جامعة UBT</p>
+              </div>
+            </div>
+
+            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div class="px-4 py-3">
+                <h2 class="text-2xl font-semibold text-white mb-2">تاريخ الملتقى</h2>
+                <p class="text-sm text-gray-300">3 أكتوبر 2025</p>
+            </div>
+            </div>
+
+            <div class="w-full h-[110px] bg-[#E9DFFF]/8 border border-[#F6F0FF]/80 rounded-[25px] backdrop-blur-md p-2 text-right transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div class="px-4 py-3">
+                <h2 class="text-2xl font-semibold text-white mb-2">ساعات الملتقى</h2>
+                <p class="text-sm text-gray-300">4:00 م إلى 8:00 م</p>
+            </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- ========== قسم الجدول الزمني ========== -->
@@ -375,25 +396,61 @@
 
     <!-- ========== قسم التذييل ========== -->
     <!-- عضو الفريق: سلطانة -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <!-- أضف محتوى التذييل هنا -->
-            <div class="bg-gray-700 p-12 rounded-lg border-2 border-dashed border-gray-600 text-center">
-                <h2 class="text-2xl font-semibold text-gray-300 mb-2">قسم التذييل</h2>
-                <p class="text-gray-400">روابط التذييل، حقوق الطبع، وسائل التواصل الاجتماعي، ومعلومات إضافية</p>
-                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-gray-800 p-4 rounded-lg">
-                        <p class="text-sm text-gray-400">عمود التذييل 1</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg">
-                        <p class="text-sm text-gray-400">عمود التذييل 2</p>
-                    </div>
-                    <div class="bg-gray-800 p-4 rounded-lg">
-                        <p class="text-sm text-gray-400">عمود التذييل 3</p>
-                    </div>
-                </div>
+    <footer class="bg-black text-white pt-12 pb-6 mt-16 border-t border-[#2E266F]/40">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div class="flex items-center gap-6">
+            <img src="static/logo/logo-white.svg" alt="شعار كود الخبرة" class="h-20 w-auto"/>
+            <p class="text-base text-white/80 max-w-sm leading-relaxed">
+            كود الخبرة ملتقى فريد من نوعه حيث يكشف فيه الغطاء عن أسرار الخبرة في المجالات التقنية</p>
+        </div>
+
+        <div class="relative mx-auto md:mx-0">
+            <div class="group relative flex items-center gap-6 px-16 py-3">
+            <!-- الاقواس  -->
+            <svg viewBox="0 0 24 24"
+                class="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 h-10 w-12 text-[#8236FC]
+                        transition-all duration-300 group-hover:-translate-x-1 drop-shadow-[0_0_0_rgba(130,54,252,0)]
+                        group-hover:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
+                <path d="M14 3L6 12l8 9h4L10 12 18 3h-4z" fill="currentColor"/>
+            </svg>
+            <svg viewBox="0 0 24 24"
+                class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-10 w-12 text-[#8236FC]
+                        transition-all duration-300 group-hover:translate-x-1 drop-shadow-[0_0_0_rgba(130,54,252,0)]
+                        group-hover:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
+                <path d="M10 3l8 9-8 9h-4l8-9-8-9h4z" fill="currentColor"/>
+            </svg>
+
+            <a href="#programming-team"
+            class="group/btn inline-flex justify-center items-center gap-2 w-40 py-2 rounded-full
+            bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-sm font-medium
+            ring-1 ring-white/10 hover:ring-white/20shadow-lg shadow-[#6C2BD9]/30 hover:shadow-[#8236FC]/40 transition-all duration-300 hover:scale-[1.03]">
+    <span>فريق العمل</span>
+    <span class="inline-flex h-8 w-8 items-center justify-center transition-transform duration-300">
+        <img src="static/img/people.png" alt="أيقونة فريق العمل" class="w-6 h-7 group-hover/btn:scale-110"/>
+    </span>
+    </a>
+
+    <a href="https://x.com/codeexper?s=21&t=hh1UjIeFzndoRE60fmXBJQ" target="_blank" aria-label="حساب X"
+    class="group/x inline-flex justify-center items-center gap-2 w-40 py-2 rounded-full
+            bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-sm font-medium
+            ring-1 ring-white/10 hover:ring-white/20
+            shadow-lg shadow-[#6C2BD9]/30 hover:shadow-[#8236FC]/40
+            transition-all duration-300 hover:scale-[1.03]">
+    <span>تابعنا على</span>
+    <span class="inline-flex h-8 w-8 items-center justify-center transition-transform duration-300">
+        <img src="static/img/xGDG.png" alt="حساب X" class="w-5 h-5 group-hover/x:scale-110"/>
+    </span>
+    </a>
             </div>
         </div>
+        </div>
+
+        <div class="mt-8">
+        <hr class="border-t border-white/20 mb-4">
+        <p class="text-center text-white/60 text-sm">جميع الحقوق محفوظة لدى مجموعة مطوري جوجل بجامعة جدة 2025</p>
+        </div>
+    </div>
     </footer>
     <script>
     updateCountdown();
@@ -402,6 +459,4 @@
     setInterval(updateCountdown, 60000);
     </script>
 </body>
-
-
 </html>
