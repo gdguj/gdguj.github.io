@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // CountDown
 function updateCountdown() {
     // التاريخ المستهدف: 20 سبتمبر
-    const targetDate = new Date("Sep 20, 2025 00:00:00").getTime();
+    const targetDate = new Date("Oct 11, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const diff = targetDate - now;
 
@@ -66,15 +66,17 @@ function updateCountdown() {
         return;
     }
 
-    // حساب الأيام والساعات والدقائق
+    // حساب الأيام والساعات والدقائق والثواني
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
     // تحديث القيم في HTML
     document.getElementById("days").textContent = String(days).padStart(2, "0");
     document.getElementById("hours").textContent = String(hours).padStart(2, "0");
     document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
 }
 // End Countdown
 
