@@ -84,3 +84,33 @@
         gap: 2rem; /* Equivalent to md:gap-8 (1 unit = 0.25rem, so 8 units = 2rem) */
     }
 }
+        /* Card animations */
+        .card-hover:hover {
+            transform: scale(1.04);
+        }
+        .icon-pulse:hover {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: .5;
+            }
+        }
+        .solid-bg {
+    background-color: rgba(0, 0, 43, 1);
+}
+        /* Here Card style */
+        .event-card {
+            background: rgba(255, 255, 255, 0.055);
+            backdrop-filter: blur(15px);
+            border: 1.5px solid #2a2d3371;
+            transition: all 0.3s ease;
+        }
+
+        .event-card:hover {
+            border-color: rgba(130, 54, 252, 1);
+            background: radial-gradient(circle at bottom center, rgba(185, 137, 240, 0.329), transparent 70%);
+        }
