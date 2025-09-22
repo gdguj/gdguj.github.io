@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فريق العمل لموقع كود الخبرة - ملتقى كود الخبرة</title>
+    <link rel="icon" type="image/x-icon" href="static/logo/element.svg">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!--Delete On Launch-->
+    <script src="static/dev.js"></script> 
+    <!--END Delete-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="bg-custom ibm-plex-sans-arabic-regular">
+
+    <!-- ========== قسم الرأس ========== -->
+    <header class="fixed top-0 left-0 w-full py-2 sm:py-3 md:py-4 z-20 px-3 sm:px-4 md:px-0 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 bg-black/80 backdrop-blur-sm rounded-xl sm:rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
+            
+            <!-- Header Top Row -->
+            <div class="flex justify-between items-center h-14 sm:h-16 md:h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <img src="static/logo/logo-white.svg" alt="Logo" class="h-7 sm:h-8 md:h-9 lg:h-10">
+                </div>
+
+                <!-- Hamburger Button (Mobile) -->
+                <button id="mobile-menu-toggle" class="md:hidden flex items-center px-2 py-1 sm:px-3 sm:py-2 text-white focus:outline-none transition-transform duration-200" aria-label="فتح القائمة">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex gap-3 md:gap-4 lg:gap-6 text-white text-sm md:text-base lg:text-lg font-light">
+                        <li><a href="index.html" class="hover:text-purple-400 transition-colors px-1 md:px-2">الرئيسية</a></li>
+                        <li><a href="index.html#location" class="hover:text-purple-400 transition-colors px-1 md:px-2">الموقع</a></li>
+                        <li><a href="index.html#agenda" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأجندة</a></li>
+                        <li><a href="index.html#registration" class="hover:text-purple-400 transition-colors px-1 md:px-2">التسجيل</a></li>
+                        <li><a href="index.html#faq" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة المتكررة</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Navigation Collapse (Bootstrap-style) -->
+            <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+                <nav class="border-t border-white/10 pt-3 pb-3 sm:pt-4 sm:pb-4">
+                    <ul class="flex flex-col text-white text-sm sm:text-base">
+                        <li><a href="index.html" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a></li>
+                        <li><a href="index.html#location" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a></li>
+                        <li><a href="index.html#agenda" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a></li>
+                        <li><a href="index.html#registration" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a></li>
+                        <li><a href="index.html#faq" class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة المتكررة</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== القسم الرئيسي - فريق العمل ========== -->
+    <section
+        class="relative bg-custom min-h-screen w-full flex items-center justify-center text-center overflow-hidden pt-20">
+
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-6 md:px-8 py-16">
+            <h1 class="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white mb-8 leading-tight">فريق العمل</h1>
+            <p class="text-lg sm:text-xl md:text-xl lg:text-2xl xl:text-2xl text-gray-200 font-medium mb-16 leading-relaxed">
+                الفريق المتميز الذي عمل على تصميم موقع ملتقى كود الخبرة
+            </p>
+
+            <!-- المشرف -->
+            <div class="mb-16">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-8">المشرف</h2>
+                <div class="flex justify-center">
+                    <div class="event-card text-center card-hover rounded-lg p-8 max-w-sm">
+                        <div class="mb-6">
+                            <!-- User Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mx-auto mb-6 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-xl md:text-2xl font-semibold text-white">فهد الجديبي</h3>
+                        </div>
+                        <p class="text-base leading-relaxed text-gray-300">
+                            مشرف مشروع الموقع الالكتروني
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="flex items-center justify-center mb-16">
+                <div class="flex-1 mx-6">
+                    <div style="height:2px; border-radius:9999px; background: linear-gradient(90deg, rgba(130,54,252,0.0) 0%, #CFA8FF 25%, #A07BFF 50%, #CFA8FF 75%, rgba(130,54,252,0.0) 100%); box-shadow: 0 0 18px rgba(130,54,252,0.25);"></div>
+                </div>
+            </div>
+
+            <!-- المصممين -->
+            <div>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-12">فريق التصميم والتطوير</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    
+                    <!-- فاطمه عادل -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">فاطمه عادل</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                              مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- فاطمه عبدالله -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">فاطمه عبدالله</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                             مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- سلطانة -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">سلطانة</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                              مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- خالد الزهراني -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">خالد الزهراني</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                              مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- ابتهال -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">ابتهال</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                              مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- تاله قطان -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">تاله قطان</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                            مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- عبدالله -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">عبدالله</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                             مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                    <!-- محمد بانبيله -->
+                    <div class="event-card text-center card-hover rounded-lg p-6">
+                        <div class="mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 icon-pulse" style="color: #8236fc;" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <h3 class="text-lg md:text-xl font-semibold text-white">محمد بانبيله</h3>
+                        </div>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                            مصمم واجهات ومبرمج
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Back to Home Button -->
+            <div class="mt-16">
+                <a href="index.html" class="inline-block bg-purple-600 hover:bg-purple-700 text-white 
+                    px-6 py-2 text-sm
+                    sm:px-7 sm:py-3 sm:text-base
+                    md:px-8 md:py-3 md:text-base
+                    lg:px-8 lg:py-3 lg:text-lg
+                    xl:px-10 xl:py-4 xl:text-xl
+                    rounded-lg font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+                    العودة للصفحة الرئيسية
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-black/80 backdrop-blur-sm text-white py-8 sm:py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            
+            <!-- Top section with logo and buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 gap-6 sm:gap-4">
+            
+            <!-- Left: Logo -->
+            <div class="flex items-center gap-2 order-2 sm:order-1">
+                <img src="static/logo/logo-white.svg" alt="شعار الملتقى" class="h-8 sm:h-10 md:h-12">
+            </div>
+            
+            <!-- Center: Action buttons (mobile stacked, desktop side-by-side) -->
+            <div class="order-1 sm:order-2 group/container flex items-center justify-center gap-3 md:gap-4 cursor-pointer
+                        transition-all duration-300 hover:scale-105">
+            
+            <!-- Left Arrow (All screens) -->
+            <svg viewBox="0 0 24 24"
+                class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC] rotate-180
+                        transition-all duration-300 group-hover/container:-translate-x-1 drop-shadow-[0_0_0_rgba(130,54,252,0)]
+                        group-hover/container:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
+                <path d="M14 3L6 12l8 9h4L10 12 18 3h-4z" fill="currentColor"/>
+            </svg>
+            
+            <div class="flex flex-row gap-3 md:gap-4">
+                <a href="team.html"
+                class="group/btn inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
+                bg-[#8236FC] text-white text-xs sm:text-sm font-medium
+                ring-1 ring-white/10 hover:ring-white/20 shadow-lg transition-all duration-300 hover:scale-[1.03]">
+        <span>فريق العمل</span>
+        <span class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
+            <img src="static/img/people.png" alt="أيقونة فريق العمل" class="w-5 h-6 md:w-6 md:h-7 group-hover/btn:scale-110"/>
+        </span>
+        </a>
+
+        <a href="https://x.com/codeexper" target="_blank" aria-label="حساب اكس"
+        class="group/x inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
+                bg-[#6C2BD9] text-white text-xs sm:text-sm font-medium
+                ring-1 ring-white/10 hover:ring-white/20
+                shadow-lg
+                transition-all duration-300 hover:scale-[1.03]">
+        <span>تابعنا على</span>
+        <span class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
+            <img src="static/img/xGDG.png" alt="حساب اكس" class="w-4 h-4 md:w-5 md:h-5 group-hover/x:scale-110"/>
+        </span>
+        </a>
+            </div>
+            
+            <!-- Right Arrow (All screens) -->
+            <svg viewBox="0 0 24 24"
+                class="pointer-events-none h-8 w-8 md:h-10 md:w-12 text-[#8236FC]
+                        transition-all duration-300 group-hover/container:translate-x-1
+                        group-hover/container:drop-shadow-[0_0_10px_rgba(130,54,252,0.7)]">
+                <path d="M14 3L6 12l8 9h4L10 12 18 3h-4z" fill="currentColor"/>
+            </svg>
+            </div>
+        </div>
+
+        <div class="mt-6 sm:mt-8">
+        <hr class="border-t border-white/20 mb-3 sm:mb-4">
+        <p class="text-center text-white/60 text-xs sm:text-sm px-2">جميع الحقوق محفوظة لدى مجموعة مطوري جوجل بجامعة جدة 2025</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
