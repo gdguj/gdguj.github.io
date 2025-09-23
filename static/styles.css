@@ -20,6 +20,10 @@
   --color-darkslategray: #373738;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .inter-normal {
   font-family: "Inter", sans-serif;
