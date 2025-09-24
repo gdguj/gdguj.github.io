@@ -30,6 +30,7 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+</head>
 
 </head>
 
@@ -63,11 +64,15 @@
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:block">
                     <ul class="flex gap-3 md:gap-4 lg:gap-6 text-white text-sm md:text-base lg:text-lg font-light">
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الرئيسية</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الموقع</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأجندة</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">التسجيل</a></li>
-                        <li><a href="#" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة
+                        <li><a href="#signup" class="hover:text-purple-400 transition-colors px-1 md:px-2">الرئيسية</a>
+                        </li>
+                        <li><a href="#location" class="hover:text-purple-400 transition-colors px-1 md:px-2">الموقع</a>
+                        </li>
+                        <li><a href="#agenda" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأجندة</a>
+                        </li>
+                        <li><a href="#registration-cta"
+                                class="hover:text-purple-400 transition-colors px-1 md:px-2">التسجيل</a></li>
+                        <li><a href="#faq" class="hover:text-purple-400 transition-colors px-1 md:px-2">الأسئلة
                                 المتكررة</a></li>
                     </ul>
                 </nav>
@@ -78,21 +83,21 @@
                 style="max-height: 0;">
                 <nav class="border-t border-white/10 pt-3 pb-3 sm:pt-4 sm:pb-4">
                     <ul class="flex flex-col text-white text-sm sm:text-base">
-                        <li><a href="#"
+                        <li><a href="#signup"
                                 class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الرئيسية</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="#location"
                                 class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الموقع</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="#agenda"
                                 class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأجندة</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="#registration-cta"
                                 class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">التسجيل</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="#faq"
                                 class="block py-2 sm:py-3 px-3 sm:px-4 hover:bg-purple-900/30 hover:text-purple-400 transition-colors border-b border-white/5 last:border-b-0">الأسئلة
-                                المتكررة</a></li>
+                                متكررة</a></li>
                     </ul>
                 </nav>
             </div>
@@ -101,7 +106,7 @@
 
     <!-- ========== القسم الرئيسي ========== -->
     <!-- عضو الفريق: ابتهال -->
-    <section
+    <section id="signup"
         class="relative hero-bg bg-gradient-to-br from-purple-800 via-purple-900 to-black h-screen w-full flex items-center justify-center text-center overflow-hidden"
         style="background-image: url('static/background.png'); background-size: cover; background-position: center;">
 
@@ -138,13 +143,13 @@
             </div>
 
             <!-- Button -->
-            <a href="#" class="inline-block bg-purple-600 hover:bg-purple-700 text-white 
-                px-6 py-2 text-sm
-                sm:px-7 sm:py-3 sm:text-base
-                md:px-8 md:py-3 md:text-base
-                lg:px-8 lg:py-3 lg:text-lg
-                xl:px-10 xl:py-4 xl:text-xl
-                rounded-lg font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105">
+            <a href="#" class="inline-block bg-transparent text-white px-6 py-2 text-sm
+                 sm:px-7 sm:py-3 sm:text-base
+                 md:px-8 md:py-3 md:text-base
+                 lg:px-8 lg:py-3 lg:text-lg
+                 xl:px-10 xl:py-4 xl:text-xl
+              rounded-full font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
+                style="background: linear-gradient(90deg, #8236FC 0%, #6F2ED6 25%, #5F27BB 50%, #331679 75%, #0F0842 100%); box-shadow: 0 10px 30px rgba(50,10,90,0.22), 0 0 18px rgba(130,54,252,0.28);">
                 سجل الآن
             </a>
         </div>
@@ -313,7 +318,7 @@
 
     <!-- ========== قسم تفاصيل الفعالية ========== -->
     <!-- عضو الفريق: سلطانه -->
-    <section class="event-details min-h-[800px] relative bg-custom">
+    <section id="location" class="event-details min-h-[800px] relative bg-custom">
         <div class="absolute inset-0 z-0">
             <img src="static/img/backgroundevent.png" alt="خلفية" class="w-full h-full object-cover" />
         </div>
@@ -326,7 +331,8 @@
                             class="w-full h-[360px] object-cover rounded-[25px] shadow-lg" />
                         <div class="absolute bottom-4 right-4">
                             <a href="https://maps.app.goo.gl/81T4VxvWVVAaUdoX6?g_st=ipc" target="_blank" rel="noopener"
-                                class="inline-block bg-[#8236FC] hover:bg-[#7029ED] text-white px-8 py-3 rounded-2xl transition-colors duration-300 shadow-lg">احصل
+                                class="inline-block text-white px-8 py-3 rounded-full font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
+                                style="background: linear-gradient(90deg, #8236FC 0%, #6F2ED6 25%, #5F27BB 50%, #331679 75%, #0F0842 100%); box-shadow: 0 10px 30px rgba(50,10,90,0.22), 0 0 18px rgba(130,54,252,0.28);">احصل
                                 على الإتجاهات</a>
                         </div>
                     </div>
@@ -363,7 +369,8 @@
 
     <!-- ========== قسم الجدول الزمني ========== -->
     <!-- عضو الفريق: تالة -->
-    <section class="bg-gray-900 text-white py-24 md:py-24 text-center px-4 md:px-0" style="background: #0a093d;">
+    <section id="agenda" class="bg-gray-900 text-white py-24 md:py-24 text-center px-4 md:px-0"
+        style="background: #0a093d;">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl md:text-4xl lg:text-6xl font-semibold mb-12 md:mb-24">رحلة الملتقى</h2>
 
@@ -512,7 +519,7 @@
 
     <!-- ========== قسم التواصل ========== -->
     <!-- عضو الفريق: خالد -->
-    <section class="contact py-16 bg-custom relative overflow-hidden">
+    <section id="registration" class="contact py-16 bg-custom relative overflow-hidden">
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 lg:gap-12 min-h-[500px]">
 
@@ -617,7 +624,7 @@
 
     <!-- ========== قسم النداء ========== -->
     <!-- عضو الفريق: محمد -->
-    <section dir="rtl" class="main-section bg-custom py-12 relative overflow-hidden ">
+    <section id="registration-cta" dir="rtl" class="main-section bg-custom py-12 relative overflow-hidden ">
         <!-- وهج زخرفي -->
         <div class="pointer-events-none absolute -top-10 right-12 h-56 w-56 rounded-full bg-purple-600/40 blur-3xl">
         </div>
@@ -635,9 +642,8 @@
 
                     <div class="mt-9">
                         <a href="#signup"
-                            class="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm md:text-base font-semibold
-                   bg-white/10 backdrop-blur-md border border-white/20 text-white
-                   hover:bg-white/20 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2 focus:ring-offset-transparent">
+                            class="inline-flex items-center justify-center text-white px-6 py-3 rounded-full font-medium shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-105"
+                            style="background: linear-gradient(90deg, #8236FC 0%, #6F2ED6 25%, #5F27BB 50%, #331679 75%, #0F0842 100%); box-shadow: 0 10px 30px rgba(50,10,90,0.22), 0 0 18px rgba(130,54,252,0.28);">
                             سجّل الآن
                         </a>
                     </div>
@@ -653,7 +659,7 @@
 
     <!-- ========== قسم الأسئلة الشائعة ========== -->
     <!-- عضو الفريق: عبدالله -->
-    <section class="faq py-16 bg-custom">
+    <section id="faq" class="faq py-16 bg-custom">
         <div class="container mx-auto px-4">
             <!-- أضف محتوى الأسئلة الشائعة هنا -->
             <div class="p-8 rounded-lg text-right text-white">
@@ -752,9 +758,9 @@
 
                         <!-- Buttons Container -->
                         <div class="flex flex-row gap-3 md:gap-4">
-                            <a href="team.html" class="group/btn inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
-                bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-xs sm:text-sm font-medium
-                ring-1 ring-white/10 hover:ring-white/20 shadow-lg transition-all duration-300 hover:scale-[1.03]">
+                            <a href="team.html"
+                                class="group/btn inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:scale-[1.03] rounded-full"
+                                style="background: linear-gradient(90deg, #8236FC 0%, #6F2ED6 25%, #5F27BB 50%, #331679 75%, #0F0842 100%); box-shadow: 0 10px 30px rgba(50,10,90,0.22), 0 0 18px rgba(130,54,252,0.28);">
                                 <span>فريق العمل</span>
                                 <span
                                     class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
@@ -764,11 +770,9 @@
                             </a>
 
                             <a href="https://x.com/codeexper?s=21&t=hh1UjIeFzndoRE60fmXBJQ" target="_blank"
-                                aria-label="حساب اكس" class="group/x inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 rounded-full
-                bg-[#6C2BD9] hover:bg-[#8236FC] text-white text-xs sm:text-sm font-medium
-                ring-1 ring-white/10 hover:ring-white/20
-                shadow-lg 
-                transition-all duration-300 hover:scale-[1.03]">
+                                aria-label="حساب اكس"
+                                class="group/x inline-flex justify-center items-center gap-1 md:gap-2 w-32 sm:w-36 md:w-40 py-3 md:py-2 text-white text-xs sm:text-sm font-medium transition-all duration-300 hover:scale-[1.03] rounded-full"
+                                style="background: linear-gradient(90deg, #8236FC 0%, #6F2ED6 25%, #5F27BB 50%, #331679 75%, #0F0842 100%); box-shadow: 0 10px 30px rgba(50,10,90,0.22), 0 0 18px rgba(130,54,252,0.28);">
                                 <span>تابعنا على</span>
                                 <span
                                     class="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center transition-transform duration-300">
@@ -801,6 +805,7 @@
         // تحديث كل دقيقة
         setInterval(updateCountdown, 1000);
     </script>
+
 </body>
 
 </html>

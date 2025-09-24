@@ -123,3 +123,8 @@
   border-color: rgba(130, 54, 252, 1);
   background: radial-gradient(circle at bottom center, rgba(185, 137, 240, 0.329), transparent 70%);
 }
+
+/* Global smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
