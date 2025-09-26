@@ -530,27 +530,41 @@
                             <h3 class="text-xl md:text-2xl font-semibold text-white mb-3 text-center">تواصل معنا</h3>
                             <p class="text-sm text-white/60 mb-6 text-center">يمكنك التواصل معنا عبر النموذج التالي</p>
 
-                            <form class="space-y-4 text-right" action="#" method="post">
+                            <form id="contact-form" class="space-y-4 text-right" action="#" method="post" novalidate
+                                data-send-via="mailto" data-recipient="GDGCUJ@gmail.com">
                                 <div>
                                     <label class="sr-only">الاسم</label>
-                                    <input type="text" name="name" placeholder="الاسم"
+                                    <input type="text" name="name" id="contact-name" placeholder="الاسم" required
+                                        maxlength="100"
                                         class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 transition-shadow duration-200 hover:shadow-[0_12px_40px_rgba(130,54,252,0.10)] focus:shadow-[0_20px_60px_rgba(130,54,252,0.32)] focus:outline-none focus:ring-8 focus:ring-[#8236FC]/30 focus:z-10" />
                                 </div>
                                 <div>
                                     <label class="sr-only">رقم الجوال</label>
-                                    <input type="text" name="phone" placeholder="رقم الجوال"
-                                        class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 transition-shadow duration-200 hover:shadow-[0_12px_40px_rgba(130,54,252,0.10)] focus:shadow-[0_20px_60px_rgba(130,54,252,0.32)] focus:outline-none focus:ring-8 focus:ring-[#8236FC]/30 focus:z-10" />
+                                    <input type="tel" name="phone" id="contact-phone" placeholder="رقم الجوال" required
+                                        inputmode="tel" pattern="(\+9665\d{8}|9665\d{8}|05\d{8})" maxlength="14"
+                                        class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 text-right transition-shadow duration-200 hover:shadow-[0_12px_40px_rgba(130,54,252,0.10)] focus:shadow-[0_20px_60px_rgba(130,54,252,0.32)] focus:outline-none focus:ring-8 focus:ring-[#8236FC]/30 focus:z-10" />
                                 </div>
                                 <div>
                                     <label class="sr-only">الإيميل</label>
-                                    <input type="email" name="email" placeholder="الإيميل"
+                                    <input type="email" name="email" id="contact-email" placeholder="الإيميل" required
+                                        maxlength="254"
                                         class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 transition-shadow duration-200 hover:shadow-[0_12px_40px_rgba(130,54,252,0.10)] focus:shadow-[0_20px_60px_rgba(130,54,252,0.32)] focus:outline-none focus:ring-8 focus:ring-[#8236FC]/30 focus:z-10" />
                                 </div>
                                 <div>
                                     <label class="sr-only">الوصف</label>
-                                    <textarea name="message" rows="4" placeholder="الوصف"
+                                    <textarea name="message" id="contact-message" rows="4" placeholder="الوصف" required
+                                        minlength="10" maxlength="2000"
                                         class="w-full rounded-lg bg-[#0f0b2a] border border-white/10 px-4 py-3 text-white placeholder-white/30 transition-shadow duration-200 hover:shadow-[0_12px_40px_rgba(130,54,252,0.10)] focus:shadow-[0_20px_60px_rgba(130,54,252,0.32)] focus:outline-none focus:ring-8 focus:ring-[#8236FC]/30 focus:z-10 resize-none"></textarea>
                                 </div>
+
+                                <!-- Honeypot field to catch bots (leave hidden) -->
+                                <div style="display:none; visibility:hidden; height:0;">
+                                    <label>Leave this field empty</label>
+                                    <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                                </div>
+
+                                <!-- Inline status message -->
+                                <div id="contact-status" class="text-center text-sm text-white/80"></div>
 
                                 <div class="flex justify-center">
                                     <button type="submit"
@@ -805,6 +819,7 @@
         // تحديث كل دقيقة
         setInterval(updateCountdown, 1000);
     </script>
+    <script src="static/form.js"></script>
 
 </body>
 
